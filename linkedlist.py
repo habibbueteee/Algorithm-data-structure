@@ -84,6 +84,7 @@ Linked_list.insert_end('Adam')
 Linked_list.traverse()
 print('Size: ' + str(Linked_list.size_of_linkedList()))
 print('\n')
+print('-----------')
 
 Linked_list.remove(7.5)
 
