@@ -64,50 +64,60 @@
 # my_dog.roll_over()
 
 
-class Car():
-	""""Represnting a Car"""
-	def __init__(self, make, model, year):
-		"""Initialize attributes to describe a car"""
-		self.make = make
-		self.model = model
-		self.year = year
-		self.odometer_reading = 0
+# class Car():
+	# """"Represnting a Car"""
+	# def __init__(self, make, model, year):
+		# """Initialize attributes to describe a car"""
+		# self.make = make
+		# self.model = model
+		# self.year = year
+		# self.odometer_reading = 0
 		
-	def get_descriptive_name(self):
-		"""Return a neatly formatted descriptive name."""
-		long_name = str(self.year)+ " "+ self.make + " " + self.model
-		return long_name.title()
+	# def get_descriptive_name(self):
+		# """Return a neatly formatted descriptive name."""
+		# long_name = str(self.year)+ " "+ self.make + " " + self.model
+		# return long_name.title()
 	
-	def read_odometer(self):
-		"""Print a statement showing the car's mileage."""
-		print("This car has "+ str(self.odometer_reading)+ " miles on it.")
+	# def read_odometer(self):
+		# """Print a statement showing the car's mileage."""
+		# print("This car has "+ str(self.odometer_reading)+ " miles on it.")
 	
-class ElectricCar(Car):
-	"""Represent aspects of a car, specific to electric vehicles."""
+# class ElectricCar(Car):
+	# """Represent aspects of a car, specific to electric vehicles."""
 	
-	def __init__(self, make, model, year):
-		"""Initialize attriibutes of the parent class."""
-		super().__init__(make, model, year)
-		self.battery_size = 70
+	# def __init__(self, make, model, year):
+		# """Initialize attriibutes of the parent class."""
+		# super().__init__(make, model, year)
+		# self.battery_size = 70
 		
-	def describe_battery(self):
-		"""Print battery description"""
-		print("This car has a "+ str(self.battery_size)+ " -kwh battery")
+	# def describe_battery(self):
+		# """Print battery description"""
+		# print("This car has a "+ str(self.battery_size)+ " -kwh battery")
 		
-# my_new_car = Car('audi', 'a4',2016)
-# print(my_new_car.get_descriptive_name())
-# my_new_car.odometer_reading = 23
-# my_new_car.read_odometer()		
+# # my_new_car = Car('audi', 'a4',2016)
+# # print(my_new_car.get_descriptive_name())
+# # my_new_car.odometer_reading = 23
+# # my_new_car.read_odometer()		
 
-my_tesla = ElectricCar('Tesla', 'T5', 2009)
-print(my_tesla.get_descriptive_name())
-my_tesla.describe_battery()
-
-
+# my_tesla = ElectricCar('Tesla', 'T5', 2009)
+# print(my_tesla.get_descriptive_name())
+# my_tesla.describe_battery()
 
 
+# a = int(input())
+# b = int(input())
+# if (a>=1 and a<=10**10) and (b>=1 and b<=10**10):
+    # print("\n"+str(a+b)+"\n")
+    # print(str(a-b)+"\n")
+    # print(str(a*b))
+
+# else:
+	# print("Out of limit")
 
 
+a = int(input())
+b = int(input())
+print(int(a/b), float(a/b), sep = '\n')
 
 
 
